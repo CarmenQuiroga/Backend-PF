@@ -1,0 +1,10 @@
+image: virginioio/node-12:1.0.1
+
+stages:
+- deploy
+ heroku-deploy:
+   stage: deploy
+   type: deploy
+   script:
+     - /bin/bash -l -c "gem install deploy"
+     - /bin/bash -l -c "dpl --provider=heroku --app=$HEROKU_URL_DEV --api-key=$HEROKU_API_KEY"
