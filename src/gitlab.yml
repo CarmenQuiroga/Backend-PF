@@ -8,3 +8,8 @@ stages:
    script:
      - /bin/bash -l -c "gem install deploy"
      - /bin/bash -l -c "dpl --provider=heroku --app=$HEROKU_URL_DEV --api-key=$HEROKU_API_KEY"
+    534898cc-f23a-48cf-86be-968248de32fe
+
+backendpfquiro
+java.runtime.version=17
+maven.version=3.6.2
